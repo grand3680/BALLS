@@ -1,0 +1,36 @@
+body {
+    background-color: bisque;
+    text-align: center;
+}
+
+.play_button, 
+.bot_button {
+    display: block;
+    margin: 0 auto;
+    border: #144114 1px solid;
+    background-color: bisque;
+    opacity: 70%;
+    transition: opacity 0.25s;
+    cursor: pointer;
+    width: 300px;
+    height: auto;
+}
+
+.play_button:hover {
+    opacity: 100%;
+}
+
+.play_button p,
+.bot_button p {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+h1, h1 span {
+    font-size: 50px;
+    color: black;
+    font-weight: bold;
+    font-family:fantasy;
+    letter-spacing: 5px;
+}
+

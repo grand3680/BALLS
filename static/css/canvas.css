@@ -1,0 +1,29 @@
+.inlineBlocks {
+    display: inline-flex;
+    text-align: center;
+}
+
+canvas {
+    margin-top: 25px;
+    border: 1px black solid;
+    position: absolute;
+    z-index: 1001;
+}
+
+.brick_canvas {
+    background: linear-gradient(230deg, #e66465, #9198e5);
+    border: 1px black solid;
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.hidden {
+    display: none !important;
+}
+
+ul {
+    display: inline-flex;
+    flex-direction: column;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/css/canvas.css">
+    <link rel="stylesheet" href="static/css/main.css">
+    <title>Bricks</title>
+</head>
+<body>
+    <div class="inlineBlocks">
+        <canvas class="hidden main_canvas" width="600" height="600"></canvas>
+        <canvas class="hidden brick_canvas" width="600" height="600"></canvas>
+        <ul></ul> 
+    </div>
+
+    <button class="play_button" onclick="BrickGame();">
+        <p>start</p>
+    </button>
+
+    <button class="bot_button" onclick="config.botSetup ? config.botSetup = false : config.botSetup = true">
+        <p>bot</p>
+    </button>
+
+
+
+    <script src="static/js/config.js"></script>    
+    <script src="static/js/main.js"></script> 
+    <script src="static/js/ball.js"></script>   
+    <script src="static/js/live.js"></script>
+    
+    <script src="static/js/makeBricks.js"></script>
+    <script src="static/js/drawPlatform.js"></script>
+    <script src="static/js/drawBall.js"></script>
+    <script src="static/js/borders.js"></script>
+    <script src="static/js/platformColisition.js"></script>
+
+    <script src="static/js/blocksColisition.js"></script>
+    <script src="static/js/ballMoved.js"></script> 
+    <script src="static/js/drawBricks.js"></script>
+    <script src="static/js/platform.js"></script>       
+    <script src="static/js/update.js"></script>
+
+    <script src="static/js/game.js"></script>        
+</body>
+</html>
