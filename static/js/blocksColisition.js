@@ -12,7 +12,9 @@ GameBrick.prototype.blocksColisition = function() {
             this.countX = negativeNumber(this.countX);
             this.listBricks.splice(i, 1);
             this.listBricks.splice(i, 1);
+            this.NewGame();
             this.drawBricks(); 
+			return;
         }
 
         // right border
@@ -24,7 +26,9 @@ GameBrick.prototype.blocksColisition = function() {
             this.countX = negativeNumber(this.countX);
             this.listBricks.splice(i, 1);
             this.listBricks.splice(i, 1);
+            this.NewGame();
             this.drawBricks(); 
+			return;
         }
 
         // up side
@@ -36,7 +40,9 @@ GameBrick.prototype.blocksColisition = function() {
             this.countY = negativeNumber(this.countY); 
             this.listBricks.splice(i, 1);
             this.listBricks.splice(i, 1);
+            this.NewGame();
             this.drawBricks(); 
+			return;
         } 
 
         // down side
@@ -47,7 +53,9 @@ GameBrick.prototype.blocksColisition = function() {
             this.countY = Math.abs(this.countY);
             this.listBricks.splice(i, 1);
             this.listBricks.splice(i, 1);
-            this.drawBricks(); 
+            this.NewGame();
+            this.drawBricks();
+			return;
         } 
     }
 }

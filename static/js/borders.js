@@ -1,6 +1,6 @@
 GameBrick.prototype.borders = function() {
     let PX = this.postX, PY = this.postY, CX = this.countX, CY = this.countY;
-    
+
     if (PX - config.ballSize / 2 <= 0) CX = Math.abs(CX); // left border
     if (PX + config.ballSize / 2 >= this.Width) CX = negativeNumber(CX) ; // right border
     if (PY - config.ballSize / 2 <= -1) CY = Math.abs(CY);// up border
